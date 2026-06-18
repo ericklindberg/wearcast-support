@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meridian Privacy Policy</title>
+  <style>
+:root { color-scheme: light dark; --bg: #f8f5f1; --card: #fffaf3; --text: #1f1f1f; --muted: #5f6368; --accent: #c2410c; --line: #e8ded2; }
+@media (prefers-color-scheme: dark) { :root { --bg: #171412; --card: #211d1a; --text: #f7efe7; --muted: #c9bdb2; --line: #3a312b; } }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+main { max-width: 860px; margin: 0 auto; padding: 32px 20px 56px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 28px; box-shadow: 0 12px 32px rgba(31,31,31,.06); }
+h1 { line-height: 1.1; margin-top: 0; }
+h2 { margin-top: 32px; line-height: 1.2; }
+a { color: var(--accent); }
+.meta, .footer { color: var(--muted); font-size: .95rem; }
+.footer { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 16px; }
+ul { padding-left: 1.3rem; }
+nav { margin-bottom: 18px; }
+nav a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="./index.html">Meridian</a><a href="./support.html">Support</a></nav>
+  <article class="card">
+    <h1>Meridian Privacy Policy</h1>
+    <p class="meta">Effective date: 2026-06-17</p>
+    <p>Meridian is a private life-management app for quick capture, tasks, projects, notes, reminders, journal entries, widgets, Apple Watch capture, and explicitly shared boards. This policy explains what information Meridian handles and how it is used.</p>
+
+    <h2>Information Meridian collects</h2>
+    <ul>
+      <li><strong>Account information:</strong> Sign in with Apple identifier, user ID, email address if Apple provides one or you provide one, and display name.</li>
+      <li><strong>User-created content:</strong> tasks, projects, notes, journal entries, reminders, tags, attachments, shared-board records, and related metadata you create in the app.</li>
+      <li><strong>Sync and device metadata:</strong> device identifiers, sync revisions, mutation/outbox records, tombstones for deleted records, and timestamps needed to keep your devices consistent.</li>
+      <li><strong>Notification metadata:</strong> push notification tokens, reminder timing, and notification delivery state when notifications are enabled.</li>
+      <li><strong>Sharing metadata:</strong> invitations, roles, membership records, and audit events needed to manage explicitly shared boards, projects, and tasks.</li>
+      <li><strong>Diagnostics:</strong> limited technical diagnostics when provided by platform tooling or when needed to troubleshoot reliability issues.</li>
+    </ul>
+
+    <h2>How Meridian uses information</h2>
+    <p>Meridian uses information to provide the app’s core functions: local-first capture, organization, sync across your devices, reminders, widgets, Apple Watch capture, search, account management, export/delete controls, and explicitly shared collaboration.</p>
+
+    <h2>Sharing and privacy boundaries</h2>
+    <p>Your personal records are private by default. Meridian does not expose personal tasks, notes, journal entries, reminders, or projects to another user unless you explicitly share a board, project, task, or invitation. Shared access is enforced on the server and in sync payload filtering; client-side hiding alone is not treated as sufficient protection.</p>
+
+    <h2>AI and parsing</h2>
+    <p>Meridian’s default capture parsing is deterministic and works without cloud AI. If on-device AI is available in a future release, it may be used locally. Cloud AI, if ever offered, will be off by default and will require explicit opt-in before task, note, journal, project, or capture content is sent to a third-party model.</p>
+
+    <h2>Data export and account deletion</h2>
+    <p>Meridian provides data export and account deletion controls. Deleted records may use tombstones for a limited period so deletion can sync safely across devices. After the retention window and required operational processing, deleted account data is removed from active systems except where retention is required for security, legal, fraud-prevention, or platform-operation reasons.</p>
+
+    <h2>Children</h2>
+    <p>Meridian is not intended for children under 13. If you believe a child has provided personal information, contact support so it can be reviewed and removed where appropriate.</p>
+
+    <h2>Security</h2>
+    <p>Meridian is designed around private-by-default records, authenticated access, scoped sharing, and local-first behavior. No method of storage or transmission is perfect, but the app is built to limit access to the data required for the features you use.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>This policy may be updated as Meridian evolves. The effective date above will be changed when material updates are made.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions, account deletion help, or support requests, use the Meridian support page: <a href="./support.html">https://ericklindberg.github.io/wearcast-support/meridian/support.html</a>.</p>
+
+    <p class="footer">Meridian is operated by Erick Lindberg. This page is provided for App Store privacy review and user support.</p>
+  </article>
+</main>
+</body>
+</html>

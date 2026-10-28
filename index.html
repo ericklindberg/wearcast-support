@@ -3,31 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get help with WearCast locations, recommendations, subscriptions, notifications, account recovery, and data controls.">
   <title>WearCast Support</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; color: #333; }
-    h1 { color: #1a1a2e; border-bottom: 2px solid #1a2a4a; padding-bottom: 10px; }
-    .updated { color: #666; font-size: 14px; }
-    .contact { background: #f5f5f5; padding: 20px; border-radius: 10px; margin-top: 30px; }
-    a { color: #1a2a4a; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 32px 20px; line-height: 1.65; color: #26313d; background: #fff; }
+    h1 { color: #1a1a2e; border-bottom: 2px solid #1a2a4a; padding-bottom: 10px; line-height: 1.2; }
+    h2, h3 { line-height: 1.3; }
+    h2 { margin-top: 32px; }
+    h3 { margin-top: 26px; }
+    .updated { color: #56616d; font-size: 14px; }
+    .contact, .notice { background: #f2f5f8; padding: 18px 20px; border-radius: 10px; margin: 24px 0; }
+    a { color: #163d69; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #163d69; outline-offset: 4px; }
+    nav { display: flex; flex-wrap: wrap; gap: 16px; }
+    nav a { display: inline-block; padding: 10px 0; }
+    li { margin-bottom: 8px; }
   </style>
 </head>
 <body>
-  <h1>WearCast Support</h1>
-  <p class="updated">Last updated: May 2, 2026</p>
-  <h2>Contact Us</h2>
-  <p>For support, questions, or feedback, please contact us at:</p>
-  <div class="contact">
-    <p><strong>Email:</strong> <a href="mailto:wearcast.application@gmail.com">wearcast.application@gmail.com</a></p>
-  </div>
-  <h2>Frequently Asked Questions</h2>
-  <h3>How does WearCast work?</h3>
-  <p>WearCast uses your current location to fetch weather data and provides AI-powered outfit recommendations based on the forecast.</p>
-  <h3>Is my location data stored?</h3>
-  <p>No. Your location is processed locally on your device and is not stored on our servers.</p>
-  <h3>How do I change my notification settings?</h3>
-  <p>You can change notification preferences within the WearCast app settings, or through your device's notification settings.</p>
-  <h3>What weather data does WearCast use?</h3>
-  <p>WearCast uses Open-Meteo for weather data, a free and open-source weather API.</p>
+  <header>
+    <nav aria-label="WearCast help"><a href="#contact">Contact support</a><a href="https://ericklindberg.github.io/wearcast-privacy/">Privacy policy</a></nav>
+    <h1>WearCast Support</h1>
+    <p class="updated">Last updated: October 27, 2026</p>
+  </header>
+  <main>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact us</h2>
+      <p>Email <a href="mailto:wearcast.application@gmail.com">wearcast.application@gmail.com</a> for help, feedback, or a request to access, correct, or delete your data.</p>
+      <p>For app problems, include your app version, device type, and what happened. Keep your recovery code, authentication tokens, and payment details private; do not include them in support email.</p>
+    </section>
+    <aside class="notice" aria-label="App update availability">
+      <strong>App update availability</strong>
+      <p>Improved city search, account export, deletion, and recovery controls are included in a forthcoming WearCast update. If a control described below is missing from your installed app, contact support. The location and data disclosures on this page apply to the existing service as well.</p>
+    </aside>
+    <h2>Frequently asked questions</h2>
+    <h3>How does WearCast work?</h3>
+    <p>WearCast combines the forecast for your saved location with your comfort preferences to recommend clothing. Feedback helps adjust future comfort recommendations. Weather forecasts can change; check the recommendation's date and update time before relying on an older saved result.</p>
+    <h3>Is my location stored?</h3>
+    <p>Yes. WearCast stores your saved location name, latitude, longitude, and timezone in your server profile, and caches profile information on your device. Trip plans also store their destination and dates. Coordinates are sent to weather providers to retrieve the relevant forecast. Location is not processed only on your device.</p>
+    <h3>Can I use WearCast without granting location permission?</h3>
+    <p>You can search for a city or postal code and select the matching place during setup or in Settings. Check the region before choosing a result. Using your device's current location requires location permission. Your selected place determines the forecast and reminder timezone.</p>
+    <h3>How do I correct a location?</h3>
+    <p>Open Settings and review the saved place. In the updated app, you can make one correction to your saved home location without purchasing Plus. After that correction has been used, regular location changes depend on your plan. Contact support if the saved location is incorrect and you cannot change it.</p>
+    <h3>Why does an older recommendation appear?</h3>
+    <p>A saved result may remain available when your connection or a weather provider is unavailable. A stale result is labeled with its original update time in the updated app. Retry when connected; an older recommendation should not be treated as a new forecast.</p>
+    <h3>How do I change reminders?</h3>
+    <p>Use notification settings in WearCast to change your reminder preference and time. Your device's notification permission also controls whether a reminder can appear. Turning off permission does not delete your saved WearCast profile.</p>
+    <h3>How do I restore or cancel WearCast Plus?</h3>
+    <p>For purchases made through Apple, use <strong>Restore purchases</strong> in WearCast with the Apple Account that made the purchase. Apple manages billing. To cancel, open your iPhone's Settings, tap your name, then Subscriptions and WearCast. See <a href="https://support.apple.com/en-us/118428">Apple's subscription cancellation instructions</a>.</p>
+    <p>Deleting WearCast, signing out, or deleting your WearCast account does not cancel an Apple subscription. Restoring Plus restores the purchase entitlement; use a WearCast recovery code to reconnect your saved profile and learning.</p>
+    <h3>How do I recover my profile on another device?</h3>
+    <p>In the updated app, use <strong>Settings → Show recovery code</strong> and save the code somewhere private before signing out or reinstalling. Enter it through the recovery option on the setup screen to reconnect the same profile. Anyone with this code can access that profile. Without a saved code or a valid existing session, support cannot promise recovery of the old profile.</p>
+    <h3>How do I export or delete my data?</h3>
+    <p>In the updated app, use <strong>Settings → Export my data</strong> to share a copy of the profile, recommendations, feedback, learned preferences, usage counts, and trips associated with your account. The export can contain location coordinates and personal notes.</p>
+    <p>Use <strong>Settings → Delete my account and data</strong> and confirm deletion to remove your active WearCast profile and associated records. Signing out only clears this device's local session and cached data. For an older app version or help with remaining backups or provider records, email support. See the <a href="https://ericklindberg.github.io/wearcast-privacy/">privacy policy</a> for deletion limits.</p>
+    <h3>What weather services does WearCast use?</h3>
+    <p>WearCast uses <a href="https://open-meteo.com/">Open-Meteo</a> for forecasts and city search, with the <a href="https://www.weather.gov/">US National Weather Service</a> as a forecast fallback where available. Coverage and available measurements vary by provider. The updated app identifies the source and missing or partial forecast data.</p>
+  </main>
 </body>
 </html>
